@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:id="@+id/menu">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_marginBottom="118dp">
+
+		<ImageView
+			android:src="@drawable/ic_launcher"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/close"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="280dp"
+		android:layout_height="275dp"
+		android:background="@drawable/mma"
+		android:padding="8dp"
+		android:layout_marginLeft="3dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="SHIBA LNU"
+				android:textColor="#FFFFFFFF"
+				android:textSize="17sp"
+				android:gravity="center"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="#FFFFFFFF"
+				android:layout_marginBottom="5dp"
+				android:layout_marginTop="3dp"/>
+
+		</LinearLayout>
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.1dp"/>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<Switch
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="注入绘制"
+						android:id="@+id/绘制开关"
+						android:textColor="#FFFFFFFF"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:visibility="gone">
+
+					<Switch
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="注入自瞄"
+						android:id="@+id/自瞄开关"
+						android:textColor="#FFFFFFFF"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<CheckBox
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:text="人物射线"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/人物射线"/>
+
+					<CheckBox
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:text="背敌提示"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/背敌提示"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<CheckBox
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:text="人物骨骼"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/人物骨骼"/>
+
+					<CheckBox
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:text="人物血条"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/人物信息"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<CheckBox
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:text="人物距离"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/人物距离"/>
+
+					<CheckBox
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:text="人物名字"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/人物名字"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<CheckBox
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:text="人数显示"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/附近人数"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="left|center"
+					android:layout_marginTop="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="偏移调整"
+						android:layout_marginLeft="4dp"
+						android:textColor="#FFFFFFFF"/>
+
+					<Button
+						android:layout_width="55dp"
+						android:layout_height="35dp"
+						android:text="-"
+						android:background="#00000000"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/偏移左"/>
+
+					<View
+						android:background="?android:attr/dividerHorizontal"
+						android:layout_width="1dp"
+						android:layout_height="match_parent"/>
+
+					<Button
+						android:layout_width="55dp"
+						android:layout_height="35dp"
+						android:text="+"
+						android:background="#00FFFFFF"
+						android:textColor="#FFFFFFFF"
+						android:id="@+id/偏移右"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+</LinearLayout>
+

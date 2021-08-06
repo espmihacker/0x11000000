@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center|center_vertical"
+		android:background="#DF00AAE1">
+
+		<ImageView
+			android:src="@drawable/ic_launcher"
+			android:layout_width="85dp"
+			android:layout_height="85dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="剩余时间：未登录"
+			android:textColor="#FF000000"
+			android:textSize="15sp"
+			android:textStyle="bold"
+			android:id="@+id/时间"
+			android:layout_marginTop="10dp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="40dp"
+			android:layout_marginTop="15dp"
+			android:id="@+id/sign_edit"
+			android:layout_marginLeft="30dp"
+			android:layout_marginRight="30dp"
+			android:background="@drawable/bg_user"
+			android:hint="请输入您的密钥"
+			android:textSize="13sp"
+			android:textColor="#FF000000"
+			android:textColorHint="#FF000000"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:layout_marginLeft="25dp"
+			android:layout_marginRight="25dp"
+			android:layout_marginTop="10dp"
+			android:gravity="center">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="37dp"
+				android:text="登录"
+				android:id="@+id/send_button"
+				android:background="@drawable/button"
+				android:textColor="#FF000000"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:layout_marginLeft="25dp"
+			android:layout_marginRight="25dp"
+			android:layout_marginTop="-5dp"
+			android:gravity="center">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="37dp"
+				android:text="解绑"
+				android:id="@+id/undo_button"
+				android:background="@drawable/button"
+				android:textColor="#FF000000"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

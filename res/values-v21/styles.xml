@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">?android:colorPrimary</item>
+	</style>
+	<!-- 选择框自定义主题 -->
+	<style name="select_style">
+		<item name="android:layout_width">60dip</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">4dip</item>
+		<item name="android:layout_marginRight">4dip</item>
+		<item name="android:paddingTop">4dip</item>
+		<item name="android:paddingBottom">4dip</item>
+
+		<item name="android:button">@null</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">13sp</item>
+
+	</style>
+
+</resources>
+
